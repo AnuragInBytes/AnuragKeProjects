@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="js-calcDisplay calcDisplay"></p>
+
+    <p>
+        <button class="numButton" onclick="
+        makeButton('1')">
+            1
+        </button>
+
+        <button class="numButton" onclick="
+        makeButton('2')">
+            2
+        </button>
+
+        <button class="numButton" onclick="
+        makeButton('3')">
+            3
+        </button>
+
+        <button class="calcButton" onclick="
+        makeButton(' + ')">
+            +
+        </button>
+    </p>
+
+    <p>
+        <button class="numButton" onclick="
+        makeButton('4')">
+            4
+        </button>
+
+        <button class="numButton" onclick="
+        makeButton('5')">
+            5
+        </button>
+
+        <button class="numButton" onclick="
+        makeButton('6')">
+            6
+        </button>
+
+        <button class="calcButton" onclick="
+        makeButton(' - ')">
+             -
+        </button>
+    </p>
+
+    <p>
+        <button class="numButton" onclick="
+        makeButton('7')">
+            7
+        </button>
+
+        <button class="numButton" onclick="
+        makeButton('8')">
+            8
+        </button>
+
+        <button class="numButton" onclick="
+        makeButton('9')">
+            9
+        </button>
+
+        <button class="calcButton" onclick="
+        makeButton(' * ')">
+            *
+        </button>
+    </p>
+
+    <p>
+        <button class="numButton" onclick="
+        makeButton('0')">
+            0
+        </button>
+
+        <button class="numButton" onclick="
+        makeButton('.')">
+            .
+        </button>
+
+        <button class="numButton" onclick="
+        calculation = eval(calculation);
+        document.querySelector('.js-calcDisplay').innerHTML = `${calculation}`;
+        localStorage.setItem('calculation',calculation)
+        ">
+            =
+        </button>
+
+        <button class="calcButton" onclick="
+        makeButton(' / ')">
+            /
+        </button>
+
+    </p>
+
+    <p>
+        <button class="clearButton" onclick="
+            calculation = '';
+            document.querySelector('.js-calcDisplay').innerHTML = `${calculation}`;
+            localStorage.setItem('calculation',calculation);
+            ">
+            Clear
+        </button>
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
