@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&family=Ubuntu:wght@300&family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header-part">
+            <h1 class="title">What To-do?</h1>
+        </div>
+
+        <div class="popup-bar"></div>
+
+        <div class="input-field">
+                <input class="js-input-todo" type="text" placeholder="Add a todo...">
+                <input class="js-input-date" type="date">
+                <button class="js-add-todo">
+                    <i class="fas fa-plus"></i>
+                </button>
+        </div>
+
+        <div class="options-field">
+            
+            <div class="filter-field">
+
+                <button class="js-filter-btn filter">Filter</button>
+
+                <div class="js-hidden-btns hidden">
+                    <button id="completed">Completed</button>
+
+                    <button id="pending">Pending</button>
+
+                    <button id="all">All</button>
+                </div>
+
+            </div>
+
+            <div class="delete-field">
+                <button class="js-delete-all deleteTodo">DELETE_ALL</button>
+            </div>
+
+        </div>
+
+        <div class="js-todo-page todo-grid-page"></div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>made with <i class="fas fa-heart"></i> by <span>anurag poddar</span></p>
+            <div class="contact">
+                
+                <a href="https://github.com/AnuragInBytes" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/anurag-poddar-51119a277" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/AnuragMeraNaam" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/anurag.mera.naam/" target="_blank"><i class="fab fa-instagram"></i></a>
+    
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
