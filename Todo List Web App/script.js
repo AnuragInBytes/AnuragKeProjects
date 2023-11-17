@@ -111,10 +111,10 @@ function editTodo(id){
     todoArray = todoArray.filter((e) => e.id !== id);
     saveToLocalStorage();
     renderTodo(todoArray);
-    showPopUps('Task Updated successfully', 'success');
     if(addBtnElement.classList.contains('changeIcon')){
         addBtnElement.innerHTML = '<i class="fas fa-check"></i>';
         addBtnElement.addEventListener('click', ()=> {
+            showPopUps('Task Updated successfully', 'success');
             addBtnElement.innerHTML = '<i class="fas fa-plus"></i>';
         });
     }
