@@ -29,7 +29,7 @@ calcBtn.addEventListener('click', () => {
         const minute = new Date().getMinutes();
         const hour = new Date().getHours();
         const seconds = new Date().getSeconds();
-        const time = `${hour} hours, ${minute} minues and ${seconds} seconds`;
+        const time = `${hour} hours, ${minute} minutes and ${seconds} seconds`;
 
 
         result.innerHTML = `You are ${y3} years, ${m3} months, ${d3} days, ${time} old...`;
