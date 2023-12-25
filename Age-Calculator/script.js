@@ -21,8 +21,8 @@ calcBtn.addEventListener('click', () => {
     const m2 = dob.getMonth() + 1;
     const y2 = dob.getFullYear();
 
-    const d3 = d1 - d2;
-    const m3 = m1 - m2;
+    const d3 = Math.abs(d1 - d2);
+    const m3 = Math.abs(m1 - m2);
     const y3 = y1 - y2;
 
     const clock = setInterval(() => {
