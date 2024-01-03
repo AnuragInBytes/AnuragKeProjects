@@ -100,7 +100,7 @@ body{
 
 @media (max-width: 480px){
     .stopwatch{
-        height: 50%;
+        height: 70%;
         width: 100%;
     }
     #displayTime{
@@ -128,7 +128,7 @@ body{
 }
 @media (min-width:480px) and (max-width: 800px) {
     .stopwatch{
-        height: 50%;
+        height: 70%;
         width: 100%;
     }
     #displayTime{
@@ -152,7 +152,7 @@ body{
 }
 @media (min-width:800px) and (max-width: 1650px) {
     .stopwatch{
-        height: 60%;
+        height: 70%;
         width: 60%;
     }
     #displayTime{
