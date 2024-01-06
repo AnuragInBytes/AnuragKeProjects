@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box1">
+            <h1 class="header">Random Password Generator</h1>
+
+            <p class="tag-line">Create strong and secure passwords to keep your account safe online.</p>
+        </div>
+
+        <div class="pop-up hide">
+            <p>Password copied to clipboard...</p>
+        </div>
+
+        <div class="box2">
+            <div class="image-box">
+                <img src="download (1).png" alt="">
+            </div>
+            <div class="password-box">
+
+                <div class="password-field">
+                    <input type="text" name="passwordBox" id="passwordBox" placeholder="hello">
+                    <div class="buttons">
+                        <button class="copyBtn">Copy</button>
+                        <button class="regenBtn">Regen</button>
+                        <div class="status"></div>
+                    </div>
+                </div>
+                <div class="length-field">
+
+                    <label for="length-slider">Password length : <span id="length-display"> 10 </span> </label>
+
+                    <input type="range" name="length-slider" id="length-slider" value="10" min="1" max="25">
+
+                </div>
+                <div class="character-field">
+                    <label for="checkboxs">Character used: </label>
+
+                    <div id="checkboxs">
+                        <div class="capital-checkbox">
+                            <input type="checkbox" name="capital" id="capital" checked>
+                            <label for="capital">ABC</label>
+                        </div>
+                        
+                        <div class="small-checkbox">
+                            <input type="checkbox" name="small" id="small" checked>
+                            <label for="small">abc</label>
+                        </div>
+                        
+                        <div class="numeric-checkbox">
+                            <input type="checkbox" name="numeric" id="numeric" checked>
+                            <label for="numeric">123</label>
+                        </div>
+                        
+                        <div class="special-checkbox">
+                            <input type="checkbox" name="special" id="special" checked>
+                            <label for="special">@#$</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

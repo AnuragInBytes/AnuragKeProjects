@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF1E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    min-width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+    min-height: 65%;
+}
+.box1{
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.header{
+    font-size: 3.5rem;
+    font-weight: 750;
+    font-family: sans-serif;
+    padding: 0.5em 0.3em;
+}
+.tag-line{
+    font-size: 1.1rem;
+    padding-bottom: 0.3em;
+}
+.box2{
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+}
+.password-box{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    height: 60%;
+}
+.password-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    width: 65%;
+    justify-content: space-between;
+}
+.copyBtn, .regenBtn{
+    font-size: 18px;
+    /* border: 1px solid black; */
+    border-radius: 22px;
+    padding: 0.5em 0.8em;
+    background-color: #70563e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: scale linear 100ms;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+.status{
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: #70563e;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+.copyBtn:hover, .regenBtn:hover{
+    scale: 1.1;
+}
+.copyBtn:active, .regenBtn:active{
+    scale: 1;
+}
+.password-field input{
+    width: 60%;
+    margin-right: 1em;
+    border: none;
+    border-radius: 1.5em;
+    font-size: 18px;
+    padding: 0.5em 1em;
+}
+.length-field{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+.length-field input{
+    width: 50%;
+    /* customise later */
+    -webkit-appearance: none;
+    height: 8px;
+    background-color: #70563e;
+    outline: none;
+    border-radius: 1em;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #70563e;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+.character-field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    /* background-color: red; */
+}
+#checkboxs{
+    width: 60%;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-between;
+}
+input[type=checkbox]{
+    accent-color: #70563e;
+    scale: 1.5;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.pop-up{
+    background-color: lightgreen;
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 4rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+.green{
+    background-color: rgb(121, 255, 121);
+    color: #70563e;
+}
+.blue{
+    background-color: rgb(144, 227, 255);
+    color: #70563e;
+}
+.yellow{
+    background-color: rgb(255, 255, 81);
+    color: #70563e;
+}
+.orange{
+    background-color: rgb(255, 146, 103);
+    color: #70563e;
+}
+.red{
+    background-color: rgb(255, 71, 71);
+    color: #70563e;
+}
+.hide{
+    display: none;
+}
+/* responsive */
+
+@media (max-width: 360px){
+    .buttons{
+        width: 85%;
+    }
+}
+@media (max-width: 540px) {
+    .buttons{
+        width: 70%;
+    }
+    .copyBtn, .regenBtn, .status{
+        font-size: 14px;
+    }
+    .character-field{
+        /* background-color: brown; */
+        width: 80%;
+    }
+    #checkboxs{
+        width: 100%;
+        /* background-color: greenyellow; */
+    }
+}
+@media (max-width:1280px) {
+    .header{
+        margin-top: 1rem;
+    }
+    .box2{
+        flex-direction: column;
+    }
+    .password-box{
+        /* background-color: red; */
+        width: 100%;
+    }
+    .password-field{
+        /* background-color: blue; */
+        flex-direction: column;
+        height: 7rem;
+        justify-content: space-between;
+    }
+    .password-field input{
+        width: 80%;
+    }
+    .length-field, .character-field{
+        flex-direction: column;
+        height: 4rem;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+    .length-field input{
+        width: 80%;
+    }
+    #checkboxs{
+        width: 80%;
+    }
+    input[type=checkbox]{
+        margin-right: 0.1em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .pop-up{
+        width: 70%;
+    }
+}
+
