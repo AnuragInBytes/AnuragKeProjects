@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: poppins;
+    scale: 0.91;
 }
 body{
     width: 100%;
